@@ -203,3 +203,20 @@ textarea.custom-input {
   background-color: rgba(9, 0, 0, 0.2);
   color: rgb(53, 236, 243)!important;
 }
+
+
+
+/* Esta regra aplica-se apenas a ecrãs com largura máxima de 768px (telemóveis e tablets) */
+@media (max-width: 768px) {
+    .contact-title {
+        font-size: 3rem; /* Reduz o tamanho da letra de 5rem para 3rem */
+        margin-bottom: 1.5rem; /* Reduz o espaço abaixo do título para se ajustar melhor ao ecrã pequeno */
+    }
+}
+
+/* Pode adicionar outro nível para telemóveis muito pequenos, se necessário */
+@media (max-width: 480px) {
+    .contact-title {
+        font-size: 2.5rem; /* Ainda mais pequeno para ecrãs estreitos */
+    }
+}
