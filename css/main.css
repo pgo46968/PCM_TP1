@@ -214,7 +214,7 @@ textarea.custom-input {
 
 .custom-submit:hover {
   background-color: rgba(9, 0, 0, 0.2);
-  color: rgb(82, 25, 214) !important;
+  color: rgb(46, 100, 237) !important;
 }
 
 /* Esta regra aplica-se apenas a ecrãs com largura máxima de 768px (telemóveis e tablets) */
