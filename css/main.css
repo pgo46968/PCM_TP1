@@ -118,13 +118,82 @@ body {
   height: 35%;
 }
 
-.text-overlay5 {
-  background-image: url("../images/simulation2.jpeg");
+.contact-section {
+  /* Substitua pelo caminho da sua imagem da ponte/lago */
+  background-image: url(../images/simulation2.jpeg);
   background-size: cover;
   background-position: center;
-  padding: 50px;
-  height: 600px;
-  color: rgb(248, 247, 247);
-  font-size: 50px;
+  background-color: #2c2c2c; /* Cor de fallback caso a imagem falhe */
+
+  padding: 100px 20px; /* Dá espaço acima e abaixo do formulário */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Limita a largura do formulário para não ficar gigante em ecrãs grandes */
+.contact-container {
   text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Estilo apenas para este título, para não afetar o resto do site */
+.contact-title {
+  color: #12b123;
+  font-family: "Brush Script MT", "Comic Sans MS", cursive;
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Sombra essencial para ler sobre a imagem */
+}
+
+/* Alinhamento do input e botão na mesma linha */
+.email-form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 15px;
+}
+
+/* Personalização do input do Bootstrap */
+.custom-input {
+  background-color: transparent !important;
+  border: none;
+  border-bottom: 2px solid white;
+  border-radius: 0;
+  color: white;
+  font-family: "Brush Script MT", "Comic Sans MS", cursive;
+  font-size: 1.5rem;
+  padding: 5px 0;
+  box-shadow: none !important;
+}
+
+.custom-input::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.custom-input:focus {
+  color: white;
+  border-color: white;
+}
+
+/* Estilo do botão de submissão (Quadrado, fundo transparente, borda branca) */
+.custom-submit {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-family: "Brush Script MT", "Comic Sans MS", cursive;
+  font-size: 1.2rem;
+  padding: 8px 25px;
+  border-radius: 0;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Efeito ao passar o rato no botão */
+.custom-submit:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
 }
