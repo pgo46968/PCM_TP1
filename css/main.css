@@ -186,7 +186,8 @@ textarea.custom-input {
 }
 
 .custom-submit {
-  background-color: transparent;
+  background-color: black;
+  opacity: 0.8!important;
   border: 2px solid white;
   color: rgb(245, 143, 55) !important;
   font-family: "Arial", cursive;
@@ -199,6 +200,6 @@ textarea.custom-input {
 }
 
 .custom-submit:hover {
-  background-color: rgba(2, 0, 0, 0.2);
-  color: rgb(57, 199, 235)!important;
+  background-color: rgba(9, 0, 0, 0.2);
+  color: rgb(53, 236, 243)!important;
 }
