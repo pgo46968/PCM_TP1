@@ -150,7 +150,7 @@ body {
     margin-bottom: 2rem;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.7); 
     
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo preto com 50% de transparência */
+    background-color: rgba(0, 0, 0, 0.2); /* Fundo preto com 50% de transparência */
     padding: 10px 40px; /* Adiciona espaço acima/abaixo (10px) e aos lados (40px) do texto */
     border-radius: 15px; /* Arredonda os cantos da caixa escura */
     display: inline-block; /* Garante que a caixa escura envolve apenas o texto e não a largura toda do ecrã */
