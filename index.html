@@ -144,7 +144,7 @@
         <p>board games</p>
         <p>in Java</p>
         <div class="d-flex justify-content-center justify-content-md-end w-100">
-            <video controls autoplay class="w-100" style="max-width: 400px;">
+            <video controls class="w-100" style="max-width: 400px;">
                 <source src="videos\gaming.mp4" type="video/mp4">
                 Seu navegador não suporta vídeos HTML5.
             </video>
@@ -155,7 +155,7 @@
     <div class="text-overlay4">
         <p id="project2">Simulation in Java</p>
         <div class="d-flex justify-content-center w-100">
-            <video controls autoplay class="w-100" style="max-width: 400px;">
+            <video controls class="w-100" style="max-width: 400px;">
                 <source src="videos\simulation.mp4" type="video/mp4">
                 Seu navegador não suporta vídeos HTML5.
             </video>
@@ -165,19 +165,32 @@
 
 
 
-   <section class="contact-section">
+ <!-- Contact section -->
+<section class="contact-section">
     <div class="contact-container">
         <h1 class="contact-title">Contact Me</h1>
         
-        <form class="email-form">
-            <div class="flex-grow-1">
-                <!-- Utilização da classe form-control do Bootstrap -->
-                <input type="email" class="form-control custom-input" placeholder="A46968@alunos.isel.pt">
+        <!-- Formulário atualizado com método POST e action para o seu serviço de email -->
+        <form class="email-form" action="https://formspree.io/f/mkjnajvp" method="POST">
+            
+            <!-- Campo de Email -->
+            <div class="input-wrapper">
+                <input type="email" name="email" class="form-control custom-input" placeholder="Your Email..." required>
             </div>
-            <button type="submit" class="custom-submit">Submit<br>Here</button>
+
+            <!-- Campo de Mensagem -->
+            <div class="input-wrapper">
+                <!-- A textarea permite escrever várias linhas (rows="3") -->
+                <textarea name="message" class="form-control custom-input" rows="3" placeholder="Your Message Here...." required></textarea>
+            </div>
+
+            <!-- Botão de Submissão -->
+            <button type="submit" class="custom-submit mt-3">Submit<br>Here</button>
+            
         </form>
     </div>
 </section>
+
 
   
 

@@ -119,58 +119,65 @@ body {
 }
 
 .contact-section {
-  /* Substitua pelo caminho da sua imagem da ponte/lago */
-  background-image: url(../images/simulation2.jpeg);
+  background-image: url("../images/computers1.jpg");
   background-size: cover;
   background-position: center;
-  background-color: #2c2c2c; /* Cor de fallback caso a imagem falhe */
-
-  padding: 100px 20px; /* Dá espaço acima e abaixo do formulário */
+  background-color: #2c2c2c;
+  padding: 100px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Limita a largura do formulário para não ficar gigante em ecrãs grandes */
 .contact-container {
   text-align: center;
   width: 100%;
   max-width: 600px;
 }
 
-/* Estilo apenas para este título, para não afetar o resto do site */
 .contact-title {
-  color: #12b123;
-  font-family: "Brush Script MT", "Comic Sans MS", cursive;
+  color: #f3f7f4;
+  font-family: "Arial", cursive;
   font-size: 5rem;
-  margin-bottom: 3rem;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Sombra essencial para ler sobre a imagem */
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
-/* Alinhamento do input e botão na mesma linha */
+/* Agora os itens ficam em coluna (um debaixo do outro) e centrados */
 .email-form {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 15px;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px; /* Espaço entre o email, a mensagem e o botão */
 }
 
-/* Personalização do input do Bootstrap */
+/* Garante que os campos ocupam toda a largura disponível */
+.input-wrapper {
+  width: 100%;
+}
+
+/* O estilo serve tanto para o input como para a textarea */
 .custom-input {
-  background-color: transparent !important;
+  background-color: whitesmoke !important;
   border: none;
   border-bottom: 2px solid white;
   border-radius: 0;
-  color: white;
-  font-family: "Brush Script MT", "Comic Sans MS", cursive;
+  color: rgb(6, 0, 0) !important;
+  font-family: "Arial", cursive;
   font-size: 1.5rem;
   padding: 5px 0;
   box-shadow: none !important;
 }
 
+/* Especificidade para a textarea: permite redimensionar apenas na vertical */
+textarea.custom-input {
+  resize: vertical;
+  min-height: 80px;
+}
+
 .custom-input::placeholder {
-  color: white;
-  opacity: 1;
+  color: rgb(4, 0, 0) !important;
+  opacity: 0.5 !important;
 }
 
 .custom-input:focus {
@@ -178,12 +185,11 @@ body {
   border-color: white;
 }
 
-/* Estilo do botão de submissão (Quadrado, fundo transparente, borda branca) */
 .custom-submit {
   background-color: transparent;
   border: 2px solid white;
-  color: white;
-  font-family: "Brush Script MT", "Comic Sans MS", cursive;
+  color: white !important;
+  font-family: "Arial", cursive;
   font-size: 1.2rem;
   padding: 8px 25px;
   border-radius: 0;
@@ -192,8 +198,7 @@ body {
   transition: background-color 0.3s;
 }
 
-/* Efeito ao passar o rato no botão */
 .custom-submit:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(2, 0, 0, 0.2);
   color: white;
 }
