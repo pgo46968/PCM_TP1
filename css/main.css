@@ -27,10 +27,9 @@ body {
 }
 
 .nav-link{
-  color: #81dbd7 !important;
+  color: #a8ebe8 !important;
   font-family: "Arial";
-  font-size: 40
-  px;
+  font-size: 40px;
 }
 
 .navbar ul li a:hover {
