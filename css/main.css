@@ -44,10 +44,6 @@ body {
   font-size: 70px;
 }
 
-/*.carousel-slide img {
-  position: relative;
-}*/
-
 /*Define nos contentore com esta classe uma imagem de fundo 
   que cobre todo o container e fica centrada.*/
 .bg-overlay {
@@ -86,25 +82,11 @@ body {
   background-position: center;*/
   padding: 50px;
   color: rgb(251, 246, 246);
-  font-size: 60px;
+  font-size: 50px;
   height: 700px;
   text-align: right;
 }
 
-/*.video-container1 {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  text-align: right;
-}
-
-.video-container1 video {
-  position: absolute;
-  top: 0;
-  left: 500px;
-  width: 35%;
-  height: 35%;
-}*/
 
 .text-overlay4 {
   background-image: url("../images/simulation.jpg");
@@ -112,25 +94,10 @@ body {
   background-position: center;*/
   padding: 50px;
   color: rgb(252, 249, 249);
-  font-size: 60px;
+  font-size: 50px;
   height: 700px;
   text-align: left;
 }
-
-/*.video-container2 {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  text-align: center;
-}
-
-.video-container2 video {
-  position: absolute;
-  top: 0;
-  left: 500px;
-  width: 35%;
-  height: 35%;
-}*/
 
 /*Formata a área de contacto para que tenha uma imagem de fundo, 
   um espaçamento interno, cor do texto, tamanho da fonte, altura 
@@ -161,10 +128,9 @@ body {
 .contact-title {
   color: #f3f5f3;
   font-family: "Arial", cursive;
-  font-size: 5rem;
+  font-size: 4rem;
   margin-bottom: 2rem;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-
   background-color: rgba(0, 0, 0, 0.2);
   padding: 05px px;
   border-radius: 15px;
@@ -241,7 +207,9 @@ textarea.custom-input {
   color: rgb(194, 235, 143) !important;
 }
 
-/* Formatação para ecrãs com largura máxima de 768px (telemóveis e tablets) */
+/* Formatação para ecrãs com largura máxima de 768px 
+   (telemóveis e tablets). A font-size é em rem (relativo).
+   para se adaptar às preferência do utilizador. */
 @media (max-width: 768px) {
   .contact-title {
     font-size: 3rem;
