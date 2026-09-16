@@ -1,9 +1,12 @@
 <!doctype html>
 <html lang="en">
 
+<!--Define a codificação de caracteres (utf-8) e a responsividade da página para dispositivos móveis. 
+    Importa também estilos externos como o Bootstrap CSS, o ficheiro de estilos próprio main.css, fontes do Google (Roboto),
+    ícones do Font Awesome para as redes sociais, e o JavaScript do Bootstrap.    -->
+
 <head>
-    <!-- meta tags paravos navegadores. Diz quais os caracteres a utilizar e
-     garante responsavidade para telemóveis-->
+    <!-- meta tag-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -24,13 +27,19 @@
     <!-- Font Awesome CSS, ícones das redes sociais  -->
     <script src=https://kit.fontawesome.com/69b3271ffb.js crossorigin="anonymous"></script>
 
-    <title>Paulo Portfolio</title>
+    <title>Paulo Gonçalves Portfolio</title>
 </head>
-<!--teste-->
+
+
+    <!--Corpo principal da página-->
+
 <body>
    
+    <!-- Barra das redes sociais. O primeiro elemento visível da página. 
+         Apresenta ícones com links que direcionam para o Facebook, X (Twitter), Instagram e LinkedIn do autor
+         (neste caso concreto apontam par as páginas de entrada). 
+         No lado direito inclui o texto de direitos de autor "All Rights Reserved". -->
 
-    <!-- Barra das redes sociais -->
     <header>
         <div class="container-fluid">
             <div class="row">
@@ -49,14 +58,19 @@
 
 
 
-    <!-- Navbar -->
+    <!-- Barra superior de navegação escura que permite saltar para várias secções do portefólio 
+         (Home, My Skills, About Me, Projects, Contact me). O menu "Projects" é um "dropdown"
+         que se expande para mostrar as opções "Gaming" e "Simulation". -->
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand fs-3" href="#">Paulo Gonçalves</a>
+            <!-- Botão de alternância para dispositivos móveis, que permite expandir ou recolher o menu de navegação -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- Menu de navegação com links para várias secções do portefólio -->
             <div class="collapse navbar-collapse justify-content-center  fs-4" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -68,6 +82,7 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="#aboutme">About Me</a>
                     </li>
+                    <!-- Menu suspenso para os projetos -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -88,13 +103,24 @@
     </nav>
 
 
-    <!--Carousel slide--> 
+    <!--Um carrossel de imagens (slider) que troca imagem de forma automática. 
+        Contém três slides com imagens, botões para andar para a frente ou para trás, 
+        e indicadores visuais para o utilizador saber em que slide se encontra.-->
+
+
+    <!--Diz ao Bootstrap para iniciar a transição automática dos slides-->
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        
+        <!-- Gera os pequenos botões visuais na parte inferior,
+             que permitem ao utilizador saltar diretamente para um slide específico.
+             O primeiro que tem a classe active é o apresentado quando a página carrega -->
        <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
+        
+        <!--Onde estão as imagens e o tempo de permanência de cada uma.-->
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="3000">
             <img src="images\pier.jpeg" class="d-block w-100" alt="Image">
@@ -102,6 +128,7 @@
                 <p class="fw-bolder">I´m a student developer</p>
             </div>
           </div>
+          
           <div class="carousel-item" data-bs-interval="3000">
             <img src="images\gaming.png" class="d-block w-100" alt="Image">
           </div>
@@ -109,6 +136,8 @@
             <img src="images\simulation.png" class="d-block w-100" alt="Image">
           </div>
         </div>
+
+        <!--Dois botões que permitem ao user andar para trás e para a frente nos slides.-->
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -120,16 +149,16 @@
     </div>
 
     
-    <!--Skills text-->
-    <div class="text-overlay1">
+    <!--Um bloco de texto ancorado pelo id skills, que apresenta as competências técnicas do criador da página.-->
+    <div class="bg-overlay text-overlay1">
         <p id="skills"> knowledge of HTML. </p>
         <p>Use of CSS3 to style.</p>
         <p>Familiarity with JavaScript.</p>
         <p>Coding in Java and Python.</p>
     </div>
 
-    <!--About me text-->
-    <div class="text-overlay2">
+    <!--Um bloco de texto ancorado pelo id aboutme que funciona como uma pequena biografia do autor.-->
+    <div class="bg-overlay text-overlay2">
         <p id="aboutme">I´m a student at ISEL</p>
         <p>in Informatics and Multimedia </p>
         <p>Engineering and have</p>
@@ -138,8 +167,9 @@
         <p>Data Analysis</p>
     </div>
 
-    <!--Gaming text-->
-    <div class="text-overlay3">
+    <!--Ilustra os projetos de jogos de tabuleiro e arcade em Java
+        com um video que mostra as suas dinâmicas.-->
+    <div class="bg-overlay text-overlay3">
         <p id="project1">Arcade and</p>
         <p>board games</p>
         <p>in Java</p>
@@ -151,8 +181,9 @@
         </div>
     </div>
 
-    <!--Simulation text-->
-    <div class="text-overlay4">
+    <!--Revela os projetos de simulação em Java
+        com um video que ilustra o funcionamento.-->
+    <div class="bg-overlay text-overlay4">
         <p id="project2">Simulation in Java</p>
         <div class="d-flex justify-content-center w-100">
             <video controls class="w-100" style="max-width: 400px;">
@@ -165,26 +196,29 @@
 
 
 
- <!-- Contact section -->
+ <!-- Contém um formulário de contacto. Utiliza o serviço externo Formspree
+      para processar e enviar as informações introduzidas pelo visitante (email e mensagem)
+      diretamente para a caixa de correio do autor  -->
 <section class="contact-section" id="contact">
     <div class="contact-container">
         <h1 class="contact-title">Contact Me</h1>
         
-        <!-- Formulário atualizado com método POST e action para o seu serviço de email -->
+        <!-- Formulário com método POST(empacota dados)
+             e action(destino dos dados).-->
         <form class="email-form" action="https://formspree.io/f/mkjnajvp" method="POST">
             
-            <!-- Campo de Email -->
+            <!-- Campo de Email com required que obriga o utilizador a preencher o campo -->
             <div class="input-wrapper">
                 <input type="email" name="email" class="form-control custom-input" placeholder="Your Email..." required>
             </div>
 
-            <!-- Campo de Mensagem -->
+            <!-- Campo de Mensagem com required que obriga o utilizador a preencher o campo -->
             <div class="input-wrapper">
                 <!-- A textarea permite escrever várias linhas (rows="3") -->
                 <textarea name="message" class="form-control custom-input" rows="3" placeholder="Your Message Here...." required></textarea>
             </div>
 
-            <!-- Botão de Submissão -->
+            <!-- Botão de Submissão que recolhe dados do formulário e envia para action -->
             <button type="submit" class="custom-submit mt-3">Submit<br>Here</button>
             
         </form>
@@ -195,7 +229,8 @@
   
 
 
-    <!--to highlight the items in navbar selected by the mouse-->
+    <!--Pequeno bloco de código JavaScript que garante que quando um utilizador clica num link do menu de navegação,
+        a classe "active" é movida para esse link específico, destacando-o visualmente-->
     <script>
         const navLinks = document.querySelectorAll('.nav-link');
 

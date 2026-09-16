@@ -1,42 +1,41 @@
+/*Formata todo o body com a mesma fonte e cor de fundo.*/
 body {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   background-color: rgb(174, 176, 172);
 }
 
-@media (max-width: 480px) {
-  p {
-    font-size: 25px;
-  }
-  .text-overlay3 {
-    height: 300px;
-  }
-
-  .text-overlay4 {
-    height: 300px;
-  }
-}
-
+/*Formata o container principal da página
+  para que os elementos fiquem em coluna.*/
 .container {
   display: flex;
   flex-direction: column;
 }
 
+/*Define a cor da brand na barra de navegação. 
+  O !important é usado para garantir que a cor seja 
+  aplicada por cima dos estilos definidos
+  pelo Bootstrap.*/
 .navbar-brand {
-  font-family: "Arial";
   color: #f1d433 !important;
 }
 
-.nav-link{
+/*Formata os links da barra de navegação para que fiquem 
+  com a mesma cor e tamanho.*/
+.nav-link {
   color: #a8ebe8 !important;
-  font-family: "Arial";
   font-size: 40px;
 }
 
+/*Formata os links da barra de navegação para
+  quando o mouse passa por cima deles.*/
 .navbar ul li a:hover {
   background-color: #898484;
   color: #f3d009 !important;
 }
 
+/*Formata o texto do carrossel para que fique em posição absoluta
+  (independente do resto do conteúdo), com espaçamento em relação ao topo e à esquerda
+  e com cor branca e tamanho grande.*/
 .carousel-text {
   position: absolute;
   top: 10%;
@@ -45,38 +44,46 @@ body {
   font-size: 70px;
 }
 
-.carousel-slide img {
+/*.carousel-slide img {
   position: relative;
-}
+}*/
 
-.text-overlay1 {
-  background-image: url("../images/computers_dark.jpg");
+/*Define nos contentore com esta classe uma imagem de fundo 
+  que cobre todo o container e fica centrada.*/
+.bg-overlay {
   background-size: cover;
   background-position: center;
+}
+
+/*Formata os contentores com esta classe para que tenham 
+  uma imagem de fundo, um espaçamento interno, cor do texto, 
+  tamanho da fonte, altura e alinhamento do texto.*/
+.text-overlay1 {
+  background-image: url("../images/computers_dark.jpg");
+  /*background-size: cover;
+  background-position: center;*/
   padding: 100px;
   color: rgb(246, 246, 250);
   font-size: 40px;
-  font-family: "Arial";
   height: 500px;
   text-align: right;
 }
 
 .text-overlay2 {
   background-image: url("../images/computers1_dark.jpg");
-  background-size: cover;
-  background-position: center;
+  /*background-size: cover;
+  background-position: center;*/
   padding: 50px;
   color: rgb(253, 250, 250);
   font-size: 40px;
-  font-family: "Arial";
   height: 600px;
   text-align: left;
 }
 
 .text-overlay3 {
   background-image: url("../images/gaming2.jpg");
-  background-size: cover;
-  background-position: center;
+  /*background-size: cover;
+  background-position: center;*/
   padding: 50px;
   color: rgb(251, 246, 246);
   font-size: 60px;
@@ -84,7 +91,7 @@ body {
   text-align: right;
 }
 
-.video-container1 {
+/*.video-container1 {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
@@ -97,12 +104,12 @@ body {
   left: 500px;
   width: 35%;
   height: 35%;
-}
+}*/
 
 .text-overlay4 {
   background-image: url("../images/simulation.jpg");
-  background-size: cover;
-  background-position: center;
+  /*background-size: cover;
+  background-position: center;*/
   padding: 50px;
   color: rgb(252, 249, 249);
   font-size: 60px;
@@ -110,7 +117,7 @@ body {
   text-align: left;
 }
 
-.video-container2 {
+/*.video-container2 {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
@@ -123,8 +130,11 @@ body {
   left: 500px;
   width: 35%;
   height: 35%;
-}
+}*/
 
+/*Formata a área de contacto para que tenha uma imagem de fundo, 
+  um espaçamento interno, cor do texto, tamanho da fonte, altura 
+  e alinhamento do texto.*/
 .contact-section {
   background-image: url("../images/contactme_image.jpeg");
   background-size: cover;
@@ -136,26 +146,32 @@ body {
   justify-content: center;
 }
 
+/*Formata o container do formulário de contacto para que fique centrado
+  e com uma largura máxima.*/
 .contact-container {
   text-align: center;
   width: 100%;
   max-width: 600px;
 }
 
+/*Formata o título da secção de contacto para que tenha uma cor, 
+  uma fonte, um tamanho, um espaçamento inferior, uma sombra no texto,
+  uma cor de fundo, um espaçamento interno, cantos arredondados e 
+  fique em linha.*/
 .contact-title {
-    color: #f3f5f3; 
-    font-family: "Arial", cursive;
-    font-size: 5rem;
-    margin-bottom: 2rem;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.7); 
-    
-    background-color: rgba(0, 0, 0, 0.2); /* Fundo preto com 50% de transparência */
-    padding: 10px 40px; /* Adiciona espaço acima/abaixo (10px) e aos lados (40px) do texto */
-    border-radius: 15px; /* Arredonda os cantos da caixa escura */
-    display: inline-block; /* Garante que a caixa escura envolve apenas o texto e não a largura toda do ecrã */
+  color: #f3f5f3;
+  font-family: "Arial", cursive;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 05px px;
+  border-radius: 15px;
+  display: inline-block;
 }
 
-/* Agora os itens ficam em coluna (um debaixo do outro) e centrados */
+/* Formata verticalmente os elementos do formulário de contacto */
 .email-form {
   display: flex;
   flex-direction: column;
@@ -168,35 +184,43 @@ body {
   width: 100%;
 }
 
-/* O estilo serve tanto para o input como para a textarea */
+/* formata o estilo que serve tanto para o input como para a textarea */
 .custom-input {
   background-color: whitesmoke !important;
   border: none;
   border-bottom: 2px solid white;
   border-radius: 0;
   color: rgb(6, 0, 0) !important;
-  font-family: "Arial", cursive;
+  font-family: inherit;
   font-size: 1.5rem;
   padding: 5px 0;
   box-shadow: none !important;
 }
 
-/* Especificidade para a textarea: permite redimensionar apenas na vertical */
+/* Especificidade para a textarea: permite redimensionar
+   apenas na vertical */
 textarea.custom-input {
   resize: vertical;
   min-height: 80px;
 }
 
+/* Formata o texto do placeholder para que tenha 
+   uma cor diferente */
 .custom-input::placeholder {
   color: rgb(4, 0, 0) !important;
   opacity: 0.5 !important;
 }
 
+/*Formata o texto que o user escreve.*/
 .custom-input:focus {
   color: white;
   border-color: white;
 }
 
+/* Formata o botão de envio para que tenha uma cor de fundo, 
+   uma borda, uma cor do texto, uma fonte, um tamanho da fonte,
+   um espaçamento interno, cantos arredondados, altura da linha,
+   cursor pointer e uma transição suave na cor de fundo. */
 .custom-submit {
   background-color: rgb(38, 37, 37, 0.8);
   border: 2px solid white;
@@ -210,22 +234,34 @@ textarea.custom-input {
   transition: background-color 0.3s;
 }
 
+/* Formata o botão de envio quando o mouse passa por cima para que 
+   tenha uma cor de fundo diferente e uma cor do texto diferente. */
 .custom-submit:hover {
   background-color: rgb(41, 34, 34);
   color: rgb(194, 235, 143) !important;
 }
 
-/* Esta regra aplica-se apenas a ecrãs com largura máxima de 768px (telemóveis e tablets) */
+/* Formatação para ecrãs com largura máxima de 768px (telemóveis e tablets) */
 @media (max-width: 768px) {
   .contact-title {
-    font-size: 3rem; /* Reduz o tamanho da letra de 5rem para 3rem */
-    margin-bottom: 1.5rem; /* Reduz o espaço abaixo do título para se ajustar melhor ao ecrã pequeno */
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
   }
 }
 
-/* Pode adicionar outro nível para telemóveis muito pequenos, se necessário */
+/* Regras para telemóveis muito pequenos.*/
 @media (max-width: 480px) {
+  p {
+    font-size: 25px;
+  }
+  .text-overlay3 {
+    height: 300px;
+  }
+
+  .text-overlay4 {
+    height: 300px;
+  }
   .contact-title {
-    font-size: 2.5rem; /* Ainda mais pequeno para ecrãs estreitos */
+    font-size: 2.5rem;
   }
 }
