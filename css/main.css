@@ -59,8 +59,6 @@ body {
   tamanho da fonte, altura e alinhamento do texto.*/
 .text-overlay1 {
   background-image: url("../images/computers_dark.jpg");
-  /*background-size: cover;
-  background-position: center;*/
   padding: 100px;
   color: rgb(246, 246, 250);
   font-size: 40px;
@@ -70,8 +68,6 @@ body {
 
 .text-overlay2 {
   background-image: url("../images/computers1_dark.png");
-  /*background-size: cover;
-  background-position: center;*/
   padding: 50px;
   color: rgb(253, 250, 250);
   font-size: 40px;
@@ -81,8 +77,6 @@ body {
 
 .text-overlay3 {
   background-image: url("../images/gaming2.jpg");
-  /*background-size: cover;
-  background-position: center;*/
   padding: 50px;
   color: rgb(251, 246, 246);
   font-size: 50px;
@@ -101,8 +95,6 @@ body {
 
 .text-overlay4 {
   background-image: url("../images/simulation.jpg");
-  /*background-size: cover;
-  background-position: center;*/
   padding: 50px;
   color: rgb(252, 249, 249);
   font-size: 50px;
@@ -138,12 +130,12 @@ body {
   fique em linha.*/
 .contact-title {
   color: #f3f5f3;
-  font-family: "Arial", cursive;
+  font-family: "Arial", sans-serif;
   font-size: 4rem;
   margin-bottom: 2rem;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
   background-color: rgba(0, 0, 0, 0.2);
-  padding: 05px px;
+  padding: 05px;
   border-radius: 15px;
   display: inline-block;
 }
@@ -226,7 +218,6 @@ textarea.custom-input {
     font-size: 3rem;
     margin-bottom: 1.5rem;
   }
-
 }
 
 /* Regras para telemóveis muito pequenos.*/
