@@ -49,6 +49,9 @@ body {
 .bg-overlay {
   background-size: cover;
   background-position: center;
+  min-height: 400px;
+  height: auto;
+  padding-bottom: 30px;
 }
 
 /*Formata os contentores com esta classe para que tenham 
