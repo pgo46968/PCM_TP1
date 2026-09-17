@@ -51,7 +51,7 @@ body {
   background-position: center;
   min-height: 400px;
   height: auto;
-  padding-bottom: 30px;
+  /*padding-bottom: 30px;*/
 }
 
 /*Formata os contentores com esta classe para que tenham 
@@ -64,18 +64,18 @@ body {
   padding: 100px;
   color: rgb(246, 246, 250);
   font-size: 40px;
-  height: 500px;
+  /*height: 500px;*/
   text-align: right;
 }
 
 .text-overlay2 {
-  background-image: url("../images/computers1_dark.jpg");
+  background-image: url("../images/computers1_dark.png");
   /*background-size: cover;
   background-position: center;*/
   padding: 50px;
   color: rgb(253, 250, 250);
   font-size: 40px;
-  height: 600px;
+  /*height: 600px;*/
   text-align: left;
 }
 
@@ -226,6 +226,7 @@ textarea.custom-input {
     font-size: 3rem;
     margin-bottom: 1.5rem;
   }
+
 }
 
 /* Regras para telemóveis muito pequenos.*/
