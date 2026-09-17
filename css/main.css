@@ -87,6 +87,14 @@ body {
   text-align: right;
 }
 
+/* Tamanho base para ecrãs de computador e tablet */
+.blackjack-text {
+  font-size: 12px;
+}
+
+.blackjack-link {
+  font-size: 10px;
+}
 
 .text-overlay4 {
   background-image: url("../images/simulation.jpg");
@@ -231,5 +239,13 @@ textarea.custom-input {
   }
   .contact-title {
     font-size: 2.5rem;
+  }
+
+  .blackjack-text {
+    font-size: 10px;
+  }
+
+  .blackjack-link {
+    font-size: 8px;
   }
 }
