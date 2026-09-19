@@ -85,11 +85,11 @@ body {
 }
 
 /* Tamanho base para ecrãs de computador e tablet */
-.blackjack-text {
+.game-text {
   font-size: 30px;
 }
 
-.blackjack-link {
+.game-link {
   font-size: 15px;
 }
 
