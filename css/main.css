@@ -236,11 +236,11 @@ textarea.custom-input {
     font-size: 2.5rem;
   }
 
-  .blackjack-text {
+  .game-text {
     font-size: 10px;
   }
 
-  .blackjack-link {
+  .game-link {
     font-size: 8px;
   }
 }
