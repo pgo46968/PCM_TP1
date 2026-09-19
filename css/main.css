@@ -26,8 +26,8 @@ body {
   font-size: 40px;
 }
 
-/*Formata os links da barra de navegação para
-  quando o mouse passa por cima deles.*/
+/*Formata os links da barra de navegação para que
+  quando o mouse passa por cima deles a sua cor mude.*/
 .navbar ul li a:hover {
   background-color: #898484;
   color: #f3d009 !important;
@@ -51,7 +51,6 @@ body {
   background-position: center;
   min-height: 400px;
   height: auto;
-  /*padding-bottom: 30px;*/
 }
 
 /*Formata os contentores com esta classe para que tenham 
@@ -84,11 +83,12 @@ body {
   text-align: right;
 }
 
-/* Tamanho base para ecrãs de computador e tablet */
+/* Tamanho do texto dos jogos JavaScript.*/
 .game-text {
   font-size: 30px;
 }
 
+/* Tamanho do link dos jogos JavaScript. */
 .game-link {
   font-size: 15px;
 }
@@ -102,7 +102,7 @@ body {
   text-align: left;
 }
 
-/*Formata a área de contacto para que tenha uma imagem de fundo, 
+/*Formata a área de contact me para que tenha uma imagem de fundo, 
   um espaçamento interno, cor do texto, tamanho da fonte, altura 
   e alinhamento do texto.*/
 .contact-section {
@@ -127,7 +127,7 @@ body {
 /*Formata o título da secção de contacto para que tenha uma cor, 
   uma fonte, um tamanho, um espaçamento inferior, uma sombra no texto,
   uma cor de fundo, um espaçamento interno, cantos arredondados e 
-  fique em linha.*/
+  fique em linha respeitando as dimensões altura e largura.*/
 .contact-title {
   color: #f3f5f3;
   font-family: "Arial", sans-serif;
@@ -140,20 +140,20 @@ body {
   display: inline-block;
 }
 
-/* Formata verticalmente os elementos do formulário de contacto */
+/* Formata verticalmente os elementos do formulário de contacto. */
 .email-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 25px; /* Espaço entre o email, a mensagem e o botão */
+  gap: 25px; /* Espaço entre o email, a mensagem e o botão. */
 }
 
-/* Garante que os campos ocupam toda a largura disponível */
+/* Garante que os campos ocupam toda a largura disponível. */
 .input-wrapper {
   width: 100%;
 }
 
-/* formata o estilo que serve tanto para o input como para a textarea */
+/* formata o estilo que serve tanto para o input como para a textarea. */
 .custom-input {
   background-color: whitesmoke !important;
   border: none;
@@ -166,8 +166,8 @@ body {
   box-shadow: none !important;
 }
 
-/* Especificidade para a textarea: permite redimensionar
-   apenas na vertical */
+/* Especificidade para a textarea, permite redimensionar
+   apenas na vertical. */
 textarea.custom-input {
   resize: vertical;
   min-height: 80px;
@@ -203,8 +203,8 @@ textarea.custom-input {
   transition: background-color 0.3s;
 }
 
-/* Formata o botão de envio quando o mouse passa por cima para que 
-   tenha uma cor de fundo diferente e uma cor do texto diferente. */
+/* Formata o botão de envio quando o mouse passa por cima, para que 
+   tenha uma cor de fundo e texto diferente. */
 .custom-submit:hover {
   background-color: rgb(41, 34, 34);
   color: rgb(194, 235, 143) !important;

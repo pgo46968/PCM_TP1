@@ -2,8 +2,8 @@
 <html lang="en">
 
 <!--Define a codificação de caracteres (utf-8) e a responsividade da página para dispositivos móveis. 
-    Importa também estilos externos como o Bootstrap CSS, o ficheiro de estilos próprio main.css, fontes do Google (Roboto),
-    ícones do Font Awesome para as redes sociais, e o JavaScript do Bootstrap.    -->
+    Importa também estilos externos como o Bootstrap CSS, o ficheiro de estilos personalizados main.css, fontes do Google (Roboto),
+    ícones do Font Awesome para as redes sociais, e o JavaScript do Bootstrap.-->
 
 <head>
     <!-- meta tag-->
@@ -37,8 +37,8 @@
    
     <!-- Barra das redes sociais. O primeiro elemento visível da página. 
          Apresenta ícones com links que direcionam para o Facebook, X (Twitter), Instagram e LinkedIn do autor
-         (neste caso concreto apontam par as páginas de entrada). 
-         No lado direito inclui o texto de direitos de autor "All Rights Reserved". -->
+         (neste caso concreto apontam para as páginas de entrada). 
+         No lado direito inclui o texto de direitos de autor "All Rights Reserved".-->
 
     <header>
         <div class="container-fluid">
@@ -58,13 +58,14 @@
 
 
 
-    <!-- Barra superior de navegação escura que permite saltar para várias secções do portefólio 
+    <!-- Barra superior de navegação que permite saltar para várias secções do portefólio 
          (Home, My Skills, About Me, Projects, Contact me). O menu "Projects" é um "dropdown"
          que se expande para mostrar as opções "Gaming" e "Simulation". -->
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand fs-3" href="#">Paulo Gonçalves</a>
+            
             <!-- Botão de alternância para dispositivos móveis, que permite expandir ou recolher o menu de navegação -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -103,9 +104,9 @@
     </nav>
 
 
-    <!--Um carrossel de imagens (slider) que troca imagem de forma automática. 
-        Contém três slides com imagens, botões para andar para a frente ou para trás, 
-        e indicadores visuais para o utilizador saber em que slide se encontra.-->
+    <!--Um carrossel de imagens (slider) que troca de forma automática. 
+        Contém três slides com botões para andar para a frente ou para trás, 
+        e indicadores visuais para o utilizador saber em que slide se encontra-->
 
 
     <!--Diz ao Bootstrap para iniciar a transição automática dos slides-->
@@ -113,7 +114,7 @@
         
         <!-- Gera os pequenos botões visuais na parte inferior,
              que permitem ao utilizador saltar diretamente para um slide específico.
-             O primeiro que tem a classe active é o apresentado quando a página carrega -->
+             O que tem a classe active, o primeiro, é apresentado quando a página carrega -->
        <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -149,7 +150,7 @@
     </div>
 
     
-    <!--Um bloco de texto ancorado pelo id skills, que apresenta as competências técnicas do criador da página.-->
+    <!--Um bloco de texto ancorado pelo id skills, que apresenta as competências técnicas do autor da página.-->
     <div class="bg-overlay text-overlay1">
         <p id="skills"> knowledge of HTML. </p>
         <p>Use of CSS to style.</p>
@@ -167,8 +168,7 @@
         <p>Data Analysis</p>
     </div>
 
-    <!--Ilustra os projetos de jogos de tabuleiro e arcade em Java
-        com um video que mostra as suas dinâmicas.-->
+    <!--Ilustra os projetos de jogos de tabuleiro e arcade em Java com um video.-->
     <div class="bg-overlay text-overlay3 h-auto pb-4">
         <p id="project1">Arcade and</p>
         <p>board games</p>
@@ -180,7 +180,8 @@
             </video>
         </div>
         <h1 style="text-align: left; font-size: 48px;">Try Games in Javascript</h1>
-        <!-- Um bloco de texto que apresenta um link para o jogo Blackjack, com um ícone representativo do jogo. -->
+        
+        <!-- Um bloco de texto e link's para jogos JavaScript. -->
         <div class="d-flex align-items-center flex-wrap text-start mt-3 mb-4">
             <img src="images/Blackjack.png" alt="Ícone Blackjack" style="width: 80px; height: 80px;" class="me-2 mb-2">
             <p class="mb-0 text-break game-text">
@@ -219,8 +220,8 @@
 
 
 
- <!-- Contém um formulário de contacto. Utiliza o serviço externo Formspree
-      para processar e enviar as informações introduzidas pelo visitante (email e mensagem)
+ <!-- Contém um formulário de contacto. Utiliza o serviço externo Formspree,
+      para processar e enviar as informações introduzidas pelo visitante (email e mensagem),
       diretamente para a caixa de correio do autor  -->
 <section class="contact-section" id="contact">
     <div class="contact-container">
@@ -235,13 +236,13 @@
                 <input type="email" name="email" class="form-control custom-input" placeholder="Your Email..." required>
             </div>
 
-            <!-- Campo de Mensagem com required que obriga o utilizador a preencher o campo -->
+            <!-- Campo de mensagem com required que obriga o utilizador a preencher o campo -->
             <div class="input-wrapper">
-                <!-- A textarea permite escrever várias linhas (rows="3") -->
+                <!-- A textarea permite escrever várias linhas -->
                 <textarea name="message" class="form-control custom-input" rows="3" placeholder="Your Message Here...." required></textarea>
             </div>
 
-            <!-- Botão de Submissão que recolhe dados do formulário e envia para action -->
+            <!-- Botão de Submissão que recolhe dados do formulário e envia para o destino action -->
             <button type="submit" class="custom-submit mt-3">Submit<br>Here</button>
             
         </form>
@@ -253,7 +254,7 @@
 
 
     <!--Pequeno bloco de código JavaScript que garante que quando um utilizador clica num link do menu de navegação,
-        a classe "active" é movida para esse link específico, destacando-o visualmente-->
+        a classe "active" é movida para esse link específico, mostrando essa secção visualmente-->
     <script>
         const navLinks = document.querySelectorAll('.nav-link');
 
