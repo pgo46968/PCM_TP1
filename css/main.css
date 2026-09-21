@@ -83,7 +83,7 @@ body {
   text-align: right;
 }
 
-h1.games-title {
+.games-title {
   font-size: 48px;
 }
 /* Tamanho do texto dos jogos JavaScript.*/
